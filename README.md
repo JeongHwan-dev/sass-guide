@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="./images/sass_logo.png" height=250px />
+  <img src="./images/sass_logo.png" height="200px" />
   <br />
   <br />
   <h1>:art: Sass(SCSS) 가이드 (Sass(SCSS) Guide)</h1>
