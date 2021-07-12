@@ -24,12 +24,13 @@
 **SCSS**는 Sass(Syntactically Awesome Style Sheets)의 3버전에서 새롭게 등장하였다.  
 **SCSS**는 CSS 구문과 완전히 호환되도록 하여 `CSS와 거의 같은 문법으로 Sass 기능을 지원`한다.
 
-구분 | Sass | SCSS
-:--:|:--:|:--:
-선택자 유효범위 | 들여쓰기 | `{}`(중괄호)
-`;`(새미콜론) 유무 | O | X
+|        구분        |   Sass   |     SCSS     |
+| :----------------: | :------: | :----------: |
+|  선택자 유효범위   | 들여쓰기 | `{}`(중괄호) |
+| `;`(새미콜론) 유무 |    O     |      X       |
 
 - **Sass**
+
 ```sass
 .container
   width: 100px
@@ -40,6 +41,7 @@
 ```
 
 - **SCSS**
+
 ```scss
 .container {
   width: 100px;
@@ -47,10 +49,26 @@
   h1 {
     color: blue;
     font-size: 12px;
-   }
+  }
 }
 ```
 
-
-
-
+<div>
+  <div>
+    <img src="./images/imac_icon.png" height="100px" />
+    <img src="./images/sass_logo2.png" height="80px" />
+  </div>
+  <div>
+    <br />
+    <img src="./images/down_arrow_icon.png" height="60px" />
+    <span>
+      <strong>컴파일(Compile)</strong>
+    </span>
+    <br />
+    <br />
+  </div>
+  <div>
+    <img src="./images/chrome_logo.png" height="100px" />
+    <img src="./images/css_logo.png" height="100px" />
+  </div>
+<div>
