@@ -19,6 +19,32 @@
 **Sass(SCSS)** 는 CSS의 불폄함을 해결해주는 `CSS 전처리기(Preprocessor)`이다.  
 표준 CSS 보다 훨씬 많은 기능`(선택자의 중첩, 조건문, 반복문, 다양한 단위의 연산 등)`을 사용하여 더 편리하게 작성할 수 있다.
 
+<br />
+
+<div>
+  <div>
+    <img src="./images/imac_icon.png" alt="iMac" height="100px" />
+    <img src="./images/sass_logo2.png" alt="Sass" height="80px" />
+  </div>
+  <div>
+    <br />
+    <img src="./images/down_arrow_icon.png" alt="Down-Arrow" height="60px" />
+    <span>
+      <strong>컴파일(Compile)</strong>
+    </span>
+    <br />
+    <br />
+  </div>
+  <div>
+    <img src="./images/chrome_logo.png" alt="Chrome" height="100px" />
+    <img src="./images/css_logo.png" alt="CSS" height="90px" />
+  </div>
+<div>
+
+> 프로젝트에서 Sass 문법을 사용해 코딩을 진행하게 되면 **컴파일(Compile)** 을 통해 표준 CSS로 변환하여 사용자 브라우저에서 동작할 수 있게 한다.
+
+<br />
+
 ### Sass와 SCSS의 차이점은?
 
 **SCSS**는 Sass(Syntactically Awesome Style Sheets)의 3버전에서 새롭게 등장하였다.  
@@ -52,23 +78,3 @@
   }
 }
 ```
-
-<div>
-  <div>
-    <img src="./images/imac_icon.png" height="100px" />
-    <img src="./images/sass_logo2.png" height="80px" />
-  </div>
-  <div>
-    <br />
-    <img src="./images/down_arrow_icon.png" height="60px" />
-    <span>
-      <strong>컴파일(Compile)</strong>
-    </span>
-    <br />
-    <br />
-  </div>
-  <div>
-    <img src="./images/chrome_logo.png" height="100px" />
-    <img src="./images/css_logo.png" height="100px" />
-  </div>
-<div>
