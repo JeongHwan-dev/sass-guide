@@ -80,6 +80,19 @@
 }
 ```
 
+- **CSS**
+
+```css
+.container {
+  width: 100px;
+  height: 100px;
+}
+.container h1 {
+  color: blue;
+  font-size: 12px;
+}
+```
+
 <br />
 
 ## 주석
