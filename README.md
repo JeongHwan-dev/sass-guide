@@ -11,6 +11,7 @@
 ## 목차
  
 1. **[개요](#개요)**
+2. **[주석](#주석)**
 
 <br />
 
@@ -76,5 +77,37 @@
     color: blue;
     font-size: 12px;
   }
+}
+```
+
+<br />
+
+## 주석
+
+**SCSS**에서는 두 가지 주석 처리 방법이 있다.
+
+첫 번째, 표준 CSS 주석 처리 형식 `/* comment */`  
+두 번째, SCSS에서의 주석 처리 형식 `// comment`
+
+> 표준 CSS 주석 처리 형식인 `/* comment */` 사용 시 SCSS에서 CSS로 컴파일된 후에도 주석 라인이 유지된다. 하지만 SCSS 주석 처리 형식인 `// comment`을 사용하면 컴파일 후 주석 라인이 사라진다.
+
+- **SCSS**
+
+```scss
+.container {
+  h1 {
+    background-color: yellow;
+    /* color: blue; */
+    // font-size: 12px;
+  }
+}
+```
+
+- **CSS**
+
+```css
+.container h1 {
+  background-color: yellow;
+  /* color: blue; */
 }
 ```
