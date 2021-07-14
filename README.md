@@ -116,7 +116,7 @@
 }
 ```
 
-- **CSS**
+- **CSS** (Compiled to)
 
 ```css
 .container h1 {
@@ -166,7 +166,7 @@ SCSS는 CSS와는 다르게 중첩 기능을 사용할 수 있습니다.
 }
 ```
 
-- **CSS**(Compiled to)
+- **CSS** (Compiled to)
 
 ```css
 .container ul li {
