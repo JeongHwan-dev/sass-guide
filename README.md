@@ -2,16 +2,16 @@
   <br />
   <img src="./images/sass_logo.png" height="200px" />
   <br />
-  <br />
   <h1>:art: Sass(SCSS) 가이드 (Sass(SCSS) Guide)</h1>
+  <br />
 </div>
  
-<br />
  
 ## 목차
  
-1. **[개요](#개요)**
-2. **[주석](#주석)**
+1. [개요](#1-개요)
+2. [주석](#주석)
+3. [중첩](#중첩)
 
 <br />
 
@@ -122,5 +122,60 @@
 .container h1 {
   background-color: yellow;
   /* color: blue; */
+}
+```
+
+<br />
+
+## 중첩
+
+SCSS는 CSS와는 다르게 중첩 기능을 사용할 수 있습니다.
+
+> 상위 선택자의 반복을 피하고 복잡한 구조를 편리하게 작성할 수 있는 이점이 있습니다.
+
+- **HTML**
+
+```html
+<div class="container">
+  <ul>
+    <li>
+      <div class="name">Park Jeong-hwan</div>
+    </li>
+    <li>
+      <div class="email">jeonghwan.dev@gmail.com</div>
+    </li>
+  </ul>
+</div>
+```
+
+- **SCSS**
+
+```scss
+.container {
+  ul {
+    li {
+      font-size: 20px;
+      .name {
+        color: blue;
+      }
+      .email {
+        color: orange;
+      }
+    }
+  }
+}
+```
+
+- **CSS**
+
+```css
+.container ul li {
+  font-size: 20px;
+}
+.container ul li .name {
+  color: blue;
+}
+.container ul li .email {
+  color: orange;
 }
 ```
