@@ -12,6 +12,7 @@
 1. [개요](#1-개요)
 2. [주석](#주석)
 3. [중첩](#중첩)
+4. [상위 선택자 참조](#상위-선택자-참조)
 
 <br />
 
@@ -177,5 +178,105 @@ SCSS는 CSS와는 다르게 중첩 기능을 사용할 수 있습니다.
 }
 .container ul li .email {
   color: orange;
+}
+```
+
+<br />
+
+## 상위 선택자 참조
+
+중첩 안에서의 `&`키워드는 **상위(부모) 선택자를 참조하여 치환**합니다.
+
+- **SCSS**
+
+```scss
+.btn {
+  font-size: 16px;
+  &.active {
+    color: blue;
+  }
+}
+
+.list {
+  li {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+```
+
+- **CSS** (Compiled to)
+
+```css
+.btn {
+  font-size: 16px;
+}
+.btn.active {
+  color: blue;
+}
+
+.list li:last-child {
+  margin-right: 0;
+}
+```
+
+- **SCSS**
+
+```scss
+.btn {
+  &--blue {
+    color: blue;
+  }
+  &--yellow {
+    color: yellow;
+  }
+  &--green {
+    color: green;
+  }
+}
+```
+
+- **CSS** (Complied to)
+
+```css
+.btn--blue {
+  color: blue;
+}
+.btn--yellow {
+  color: yellow;
+}
+.btn--green {
+  color: green;
+}
+```
+
+- **SCSS**
+
+```scss
+.fs {
+  &-small {
+    font-size: 12px;
+  }
+  &-medium {
+    font-size: 14px;
+  }
+  &-large {
+    font-size: 16px;
+  }
+}
+```
+
+- **CSS** (Compiled to)
+
+```css
+.fs-small {
+  font-size: 12px;
+}
+.fs-medium {
+  font-size: 14px;
+}
+.fs-large {
+  font-size: 16px;
 }
 ```
