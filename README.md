@@ -2,7 +2,7 @@
   <br />
   <img src="./images/sass_logo.png" height="200px" />
   <br />
-  <h1>:art: Sass(SCSS) 가이드 (Sass(SCSS) Guide)</h1>
+  <h1>Sass(SCSS) 가이드 (Sass(SCSS) Guide)</h1>
   <br />
 </div>
  
@@ -13,6 +13,7 @@
 2. [주석](#주석)
 3. [중첩](#중첩)
 4. [상위 선택자 참조](#상위-선택자-참조)
+5. [**중첩된 속성**](#중첩된-속성)
 
 <br />
 
@@ -278,5 +279,49 @@ SCSS는 CSS와는 다르게 중첩 기능을 사용할 수 있습니다.
 }
 .fs-large {
   font-size: 16px;
+}
+```
+
+<br />
+
+## 중첩된 속성
+
+`font-`, `margin-`, `padding` 등과 같이 동일한 네임 스페이스를 가지는 속성들을 아래와 같이 **중첩된 속성 형식으로 사용**할 수 있습니다.
+
+- **SCSS**
+
+```scss
+.container {
+  font: {
+    size: 10px;
+    weight: bold;
+    family: sans-serif;
+  }
+  margin: {
+    top: 10px;
+    bottom: 20px;
+  }
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+  }
+}
+```
+
+- **CSS** (Compiled to)
+
+```css
+.container {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 ```
